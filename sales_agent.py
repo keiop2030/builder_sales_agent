@@ -20,6 +20,7 @@ class BuilderSalesAgent:
         if not config.OPENAI_API_KEY:
             print(f"{Fore.RED}Error: OPENAI_API_KEY not found. Please set it in your .env file.{Style.RESET_ALL}")
             print(f"Copy .env.example to .env and add your OpenAI API key.")
+            print(f"\n{Fore.YELLOW}Tip: To test without an API key, use demo_agent.py instead!{Style.RESET_ALL}")
             sys.exit(1)
             
         self.client = OpenAI(api_key=config.OPENAI_API_KEY)

@@ -4,7 +4,7 @@ An AI-powered sales agent designed to sell software for commercial and residenti
 
 ## Features
 
-- **Conversational AI**: Natural language interactions powered by OpenAI GPT-4
+- **Conversational AI**: Natural language interactions powered by OpenAI (GPT-3.5-turbo or GPT-4)
 - **Builder-Specific**: Tailored for both commercial and residential construction businesses
 - **Consultative Approach**: Asks questions to understand pain points before presenting solutions
 - **Lead Qualification**: Identifies prospect needs, company size, and buying timeline

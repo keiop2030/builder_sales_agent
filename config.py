@@ -9,7 +9,9 @@ load_dotenv()
 
 # OpenAI Configuration
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4")
+# Default to gpt-3.5-turbo for cost efficiency. Use gpt-4 for better quality.
+# Set OPENAI_MODEL in .env to override (e.g., OPENAI_MODEL=gpt-4)
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
 
 # Agent Configuration
 COMPANY_NAME = os.getenv("COMPANY_NAME", "BuilderPro Software")
