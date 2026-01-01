@@ -65,7 +65,18 @@ An AI-powered sales agent designed to sell software for commercial and residenti
 
 ## Usage
 
-Run the sales agent:
+### Option 1: Demo Mode (No API Key Required)
+
+Try the agent with simulated responses:
+```bash
+python demo_agent.py
+```
+
+This demo mode provides a fully functional conversation experience without requiring an OpenAI API key. Perfect for testing and evaluation!
+
+### Option 2: Full AI Mode (Requires OpenAI API Key)
+
+Run the full AI-powered sales agent:
 ```bash
 python sales_agent.py
 ```
@@ -78,6 +89,21 @@ The agent will greet you and begin a conversation. Simply respond naturally to t
 5. Offer to schedule a personalized demo
 
 Type `exit`, `quit`, or `goodbye` to end the conversation.
+
+### View Example Conversations
+
+See example sales scenarios:
+```bash
+python examples.py        # Show menu
+python examples.py 1      # Show specific example
+```
+
+### Run Tests
+
+Validate the agent is working correctly:
+```bash
+python test_agent.py
+```
 
 ## Example Conversation
 
@@ -120,7 +146,7 @@ You can customize the agent behavior by editing `config.py`:
 ## Requirements
 
 - Python 3.8+
-- OpenAI API key
+- OpenAI API key (only required for full AI mode with `sales_agent.py`)
 - Internet connection
 
 ## Dependencies
@@ -133,8 +159,11 @@ You can customize the agent behavior by editing `config.py`:
 
 ```
 builder_sales_agent/
-├── sales_agent.py       # Main agent application
+├── sales_agent.py       # Main AI agent (requires OpenAI API)
+├── demo_agent.py        # Demo mode with simulated responses (no API needed)
 ├── config.py            # Configuration and product information
+├── examples.py          # Example conversation scenarios
+├── test_agent.py        # Test suite
 ├── requirements.txt     # Python dependencies
 ├── .env.example         # Example environment variables
 ├── .gitignore          # Git ignore rules
